@@ -1,0 +1,39 @@
+#sideMenu{
+	top: 62px;
+}
+#sideMenu button, #sideMenu a{
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+	margin-right: 13px !important;
+	margin-left: 10px !important;
+	border-width: 2px;
+}
+#workSpace{
+	margin: 5px !important;
+}
+svg{
+	background-color: rgb(235, 235, 235);
+	height: 500px !important;
+	width: 500px !important;
+}
+body{
+	background-color: rgb(235, 235, 235);
+}
+#carouselExampleIndicators{
+	height: 500px !important;
+	border-radius: 25px;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: #404040;
+}
+.carousel-indicators li:hover{
+	cursor: pointer;
+}
+#dataVizIndicators{
+	height: 550px !important;
+	border-radius: 25px;
+}
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+
+    <title>Joe Salemi</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    
+    
+      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
+        
+          <div class="col text-left text-white">
+            <h2 id="titleColumnLeft"></h2>  
+          </div>
+                    
+          <div class="col text-right text-white">
+            <h2>Joe Salemi</h2>
+          </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2-md text-left" id="sideMenudiv">
+            <nav class="nav flex-column sticky-top" id="sideMenu">
+            <a class="btn btn-outline-primary nav-item text-left" href="https://www.linkedin.com/in/joseph-salemi/" role="button">
+                <i class="fab fa-linkedin fa-lg"></i>
+                LinkedIn Profile
+              </a>
+            <a class="btn btn-outline-secondary nav-item text-left" href="https://github.com/salemij93" role="button" >
+                <i class="fab fa-github-square fa-lg"></i>
+                Github Page
+              </a>
+            <button class="btn btn-outline-success nav-item text-left" id="ProfesionalResume">
+              <i class="fas fa-file-alt fa-lg"></i>
+              My Resume
+               </button>
+            <button class="btn btn-outline-danger nav-item text-left" id="dataviz">
+                <i class="fas fa-chart-area fa-lg"></i>
+                <span>Data Visualizations</span>        
+              </button>
+              <button class="btn btn-outline-warning nav-item  text-dark text-left" id="engTools">
+                <i class="fas fa-calculator fa-lg"></i>
+                Engineering Tools       
+              </button>
+              <button class="btn btn-outline-info nav-item text-left" id="resetPage">
+                <i class="fas fa-redo-alt fa-lg" id="resetNotSpin"></i>
+                <i class="fas fa-redo-alt fa-lg fa-spin" id="resetSpinner" style="display: none;"></i>
+                Clear Page        
+              </button>
+              
+          </nav>  
+          </div>
+          <div class="col" id="workSpace">
+            <div class="container" id="canvasSpace">
+              <div class="row d-flex justify-content-around" id="btnsrow">
+              
+              </div>
+              <div id="EducationRow" class="row d-flex justify-content-around" style="display: none !important;">
+                <div id="carouselExampleIndicators" class="carousel slide w-75 mt-2 bg-secondary" data-interval="false">
+                <ol class="carousel-indicators ">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                  </li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                  </li>
+                </ol>
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active ">
+
+                    <div class="container ">
+                      <div class="row d-flex justify-content-around">
+                        <img src="images/Bradley_University.svg" class="m-1">
+                      </div>
+                      <div class="row d-flex justify-content-around text-light">
+                        <div class="col">
+                          column 1
+                        </div>
+                        <div class="col">
+                          column 2
+                        </div>
+                        <div class="col">
+                          column 3
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="container ">
+                      <div class="row d-flex justify-content-around">
+                        <img src="images/DePaul_logo_no_bottom.JPG" class="m-1 p-1" style="border-radius: 25px;">
+                      </div>
+                      <div class="row d-flex justify-content-around text-light">
+                        <div class="col">
+                          column 1
+                        </div>
+                        <div class="col">
+                          column 2
+                        </div>
+                        <div class="col">
+                          column 3
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              </div>
+
+
+              <div id="DataVizRow" class="row d-flex justify-content-around" style="display: none !important;">
+                <div id="dataVizIndicators" class="carousel slide w-75 mt-2 bg-secondary" data-interval="false">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active ">
+
+                    <div class="container ">
+                      <div class="row d-flex justify-content-around">
+                        <h5 class="text-light ">Scatter Plot</h5>
+                      </div>
+                      <div class="row d-flex justify-content-around text-light" id="ScatterPlot">
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="container ">
+                      <div class="row d-flex justify-content-around">
+                        <h5 class="text-light ">Bar Chart</h5>
+                      </div>
+                      <div class="row d-flex justify-content-around text-light" id="BarChart">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="container ">
+                      <div class="row d-flex justify-content-around">
+                        <h5 class="text-light ">Line Graph</h5>
+                      </div>
+                      <div class="row d-flex justify-content-around text-light" id="LineGraph">
+                        
+                      </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="container ">
+                      <div class="d-flex justify-content-center p-4" id="root"></div>
+                    </div>
+                  </div>
+                  
+                 </div>
+                <a class="carousel-control-prev" href="#dataVizIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#dataVizIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+              </div>
+
+              <div id="TechSkillsRow" class="row d-flex justify-content-around mt-5" style="display: none !important;">
+                <div class="col">
+                  <div class="card">
+                  <div class="card-header">
+                   <h4>Programming Languages</h4> 
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">VBA</li>
+                    <li class="list-group-item">SQL</li>
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">Node.js</li>
+                  </ul>
+                </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                  <div class="card-header">
+                   <h4>CAD Software</h4> 
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Solidworks</li>
+                    <li class="list-group-item">AutoCAD</li>
+                    <li class="list-group-item">Autodesk Inventor</li>
+                    <li class="list-group-item">Seimens NX</li>
+                    <li class="list-group-item">Seimens Teamcenter</li>
+                    <li class="list-group-item">PTC Creo</li>
+                    <li class="list-group-item">Creo Simulate</li>
+                  </ul>
+                </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                  <div class="card-header">
+                   <h4>Cloud Services</h4> 
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">AWS Lambda</li>
+                    <li class="list-group-item">AWS S3</li>
+                    <li class="list-group-item">AWS DynamoDB</li>
+                    <li class="list-group-item">AWS API Gateway</li>
+                    <li class="list-group-item">Github</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+      
+        <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
